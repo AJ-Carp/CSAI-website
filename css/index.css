@@ -1,0 +1,139 @@
+html {
+  overflow-y: scroll;
+}
+
+.home-link {
+  background-color: white;
+  color: black;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 70px;
+}
+
+main {
+  .intro {
+    margin: auto;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+    img {
+      width: 90%;
+      align-self: center;
+      margin: 50px;
+      border: 1px solid gray;
+      border-radius: 15px;
+    }
+  }
+
+  .project-container {
+    display: flex;
+    margin: 5% auto;
+    width: 80%;
+
+    .project {
+      display: flex;
+      flex-direction: column;
+      margin: 30px;
+
+      img {
+        width: 80%;
+        align-self: center;
+        margin: 50px;
+        border: 1px solid gray;
+        border-radius: 15px;
+      }
+    }
+  }
+
+  .join {
+    background-color: rgb(222, 222, 222);
+    display: flex;
+    margin: 5% auto;
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+
+    h2 {
+      align-self: center;
+      margin: 2%;
+      font-size: 30px;
+    }
+
+    ul {
+      padding: 0 40px 30px 40px;
+
+      li {
+        margin: 3%;
+      }
+    }
+  }
+}
+
+/*********************************
+SMALL DESKTOP/LAPTOP
+*********************************/
+@media(min-width: 120px) and (max-width: 1400px) {
+  h1 {
+    font-size: 65px;
+  }
+
+  main {
+    .intro {
+      width: 70%;
+      img {
+        width: 80%;
+      }
+    }
+  
+    .project-container .project img {
+      width: 100%;
+    }
+
+    .join {
+      margin: 10% auto;
+      width: 70%;
+    }
+  }
+}
+
+/*********************************
+MOBILE 
+*********************************/
+@media(max-width: 650px) {
+  h1 {
+    font-size: 60px;
+  }
+
+  main {
+    .intro {
+      width: 85%;
+      img {
+        width: 100%;
+      }
+    }
+  
+    .project-container {
+      flex-direction: column;
+      width: 100%;
+      margin: auto auto 50px auto;
+  
+      .project {
+        margin: auto;
+        width: 85%;
+    
+        img {
+          width: 100%;
+        }
+      }
+    }
+
+    .join {
+      margin: 20% auto;
+      width: 100%;
+    }
+  }
+}
